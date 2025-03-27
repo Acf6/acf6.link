@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Libre+Barcode+39&family=Libre+Barcode+39+Text&family=Palette+Mosaic&family=Rubik:ital,wght@0,700;1,700&family=Syne+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px; /* Default: 1rem = 16px */
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px; /* On smaller screens, 1rem = 14px */
+    }
+}
+@media (max-width: 480px) {
+    html {
+        font-size: 13px; /* On very small screens, 1rem = 12px */
+    }
+}
+@media (max-width: 320px) {
+    html {
+        font-size: 12px; /* On very small screens, 1rem = 12px */
+    }
+}
+
+.barcode-text {
+  font-family: "Libre Barcode 39 Text", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.rubik-regular {
+  font-family: "Rubik Regular", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+  margin: 0;
+}
+.rubik-bold {
+  font-family: "Rubik Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.25rem;
+  margin: 0;
+}
+.syne-mono-regular {
+  font-family: "Syne Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+nav {
+	background-color: white;
+	margin: 0;
+	display: flex;
+	transition-duration: 0.4s;
+	padding: 2rem 2rem 1.35rem;
+	justify-content: center;
+}
+nav a {
+	text-decoration: none;
+	color: black;
+}
+#main {
+	display: flex;
+	margin: 0rem 10rem 0rem;
+	padding: 2rem;
+	background-color: black;
+	gap: 2rem;
+	flex-direction: column;
+	color: white;
+}
+#profile {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	align-items: center;
+}
+#infos {
+	margin: 0.5rem;
+	display: flex;
+	flex-direction: column;
+}
+#pdp {
+	border-radius: 20rem;
+	height: 5rem;
+	width: 5rem;
+}
+.tag {
+	background-color: white;
+	color: black;
+	margin-bottom: 0.35rem;
+}
+.bulletin {
+	display: flex;
+	flex-direction: column;
+	color: black;
+	gap: 1rem;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+.row > div {
+	display: flex;
+	flex-direction: column;
+	color: black;
+	padding: 1rem;
+}
+.row > div:not(.moyenne) {
+	background-color: white;
+}
+.row > div:not(.name) {
+	flex-direction: row;
+	height: 1.5rem;
+	width: 4rem;
+	align-content: center;
+	justify-content: center;
+}
+.row p {
+	font-size: 1rem;
+	color: #404040;
+	align-content: center;
+	justify-content: center;
+}
+.moyenne {
+	background-color: #bfbfbf;
+}

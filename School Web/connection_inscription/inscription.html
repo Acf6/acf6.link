@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"content="width=device-width, initial-scale=1.0">
+	<title>Inscription Collège-Lycée Exa</title>
+	<link rel="stylesheet" href="styleco.css">
+</head>
+<body>
+	<script src="script.js"></script>
+	<nav>
+		<a class="barcode-text" href="../index.html">College-Lycee Exa</a>
+	</nav>
+	<div>
+		<form class="rubik-regular" action="inscription_ok.html" method="GET">
+			<p>N'utiliser pas vos vraies informations!</p></br>
+			<label for="fname">Prénom:</label></br>
+			<input type="text" id="fname" name="fname" placeholder="Amélie"></br>
+			<label for="lname">Nom de famille:</label></br>
+			<input type="text" id="lname" name="lname" placeholder="Durant"></br>
+			<label for="birthday">Date de naissance:</label></br>
+			<input type="date" id="birthday" name="birthday" placeholder="JJ/MM/AAAA"></br></br>
+			<p>Classe souhaitée:</p></br>
+			<p class="spaced">Lycée:</p>
+			<input type="radio" id="terminale" name="classchoice" value="Terminale">
+			<label for="terminale">Terminale</label>
+			<input type="radio" id="premiere" name="classchoice" value="Première">
+			<label for="premiere">Première</label>
+			<input type="radio" id="seconde" name="classchoice" value="Seconde">
+			<label for="seconde">Seconde</label></br>
+			<p class="spaced">Collège:</p>
+			<input type="radio" id="troisieme" name="classchoice" value="Troisième">
+			<label for="troisieme">Troisième</label>
+			<input type="radio" id="quatrieme" name="classchoice" value="Quatrième">
+			<label for="quatrieme">Quatrième</label>
+			<input type="radio" id="cinquieme" name="classchoice" value="Cinquième">
+			<label for="cinquieme">Cinquième</label>
+			<input type="radio" id="sixieme" name="classchoice" value="Sixième">
+			<label for="sixieme">Sixième</label></br>
+			<input type="submit" id="inscriptionsub" name="inscriptionsub" value="Confirmer">
+		</form>
+	</div>
+</body>
+</html>
