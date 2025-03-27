@@ -1,4 +1,4 @@
-const words = ["Graphisme", "Art", "Game Design"];
+const words = ["Graphisme", "Art", "Game Design", "Web"];
 
 const typingSpeed = 80; // Typing speed (milliseconds per character)
 const deletingSpeed = 60; // Deleting speed
