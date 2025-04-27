@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;700&family=Space+Mono:wght@400;700&display=swap');
+
+html {
+    font-size: 16px; /* Default: 1rem = 16px */
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px; /* On smaller screens, 1rem = 14px */
+    }
+}
+@media (max-width: 480px) {
+    html {
+        font-size: 13px; /* On very small screens, 1rem = 12px */
+    }
+}
+@media (max-width: 320px) {
+    html {
+        font-size: 12px; /* On very small screens, 1rem = 12px */
+    }
+}
+
+.outfit-thin {
+	font-family: "Outfit", serif;
+	font-optical-sizing: auto;
+	font-weight: 100;
+	font-style: normal;
+}
+
+.outfit-bold {
+	font-family: "Outfit", serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.outfit-regular {
+	font-family: "Outfit", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.5rem;
+}
+
+.space-mono-regular {
+	font-family: "Space Mono", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.space-mono-monster {
+	font-family: "Space Mono", serif;
+	font-weight: 700;
+	font-style: normal;
+	padding-bottom: 2rem;
+	margin: 0;
+	font-size: 8.75rem;
+  	transition-duration: 0.4s;
+	display: inline;
+	width: fit-content;
+}
+
+.space-mono-monster-mini {
+	font-family: "Space Mono", serif;
+	font-weight: 400;
+	font-style: normal;
+	margin: 0;
+	font-size: 6.25rem;
+  	transition-duration: 0.4s;
+	display: inline;
+	width: fit-content;
+}
+
+.space-mono-bold {
+	font-family: "Space Mono", serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 1.825rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.nav a {
+	color: black;
+	padding-right: 2rem;
+	text-decoration: none;
+	transition-duration: 0.4s;
+}
+.nav a:visited { filter: blur(0rem); }
+.nav a:focus { filter: blur(0.1rem); }
+.nav a:hover { filter: blur(0.1rem); }
+.nav a:active { filter: blur(0rem); }
+
+body {
+    margin: 0;
+    padding: 0;
+	overflow: hidden;
+    overflow-y: scroll;
+}
+nav {
+	background-color: white;
+	padding: 2rem;
+	margin: 0;
+	text-align: left;
+	display: flex;
+    justify-content: space-between;
+}
+nav::selection {
+    background-color: white;
+    color: black;
+}
+.nav-left {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+header {
+	position: relative;
+}
+#title {
+	background-color: white;
+	padding-top: 0px;
+	padding-right: 9.125rem;
+	padding-bottom: 4rem;
+	text-align: right;
+	white-space: nowrap;
+	margin: 0;
+}
+.testchara {
+	height: 50vh;
+	aspect-ratio: auto;
+	position: absolute;
+	bottom: 0;
+}
+.blur {
+	transition-duration: 0.4s;
+	display: inline;
+	width: fit-content;
+}
+.blur:hover {
+	filter: blur(0.5rem);
+}
+#typed-text {
+	display: inline;
+	border-right: 0.5rem solid black;
+	width: fit-content;
+}
+main {
+	background-color: black;
+	padding: 6rem;
+	text-align: left;
+	margin: 0;
+	color: white;
+}
+main::selection {
+    background-color: white;
+    color: black;
+}
+.section {
+	color: white;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+    display: flex;
+    gap: 0.625rem;
+	position: relative;
+	justify-content: space-between;
+}
+.section::selection {
+    background-color: white;
+    color: black;
+}
+#one {
+	background-color: #757a9e;
+}
+#two {
+	background-color: #00ffc4;
+}
+#three {
+	background-color: grey;
+}
+.img-btn {
+	display: flex;
+	align-content: flex-start;
+}
+.right {
+	justify-content: flex-end;
+}
+.see-more {
+	background-color: black;
+	color: white;
+	text-align: left;
+	margin: 0px;
+	padding: 2 0 2rem;
+	border: none;
+	cursor: pointer;
+	transition-duration: 0.4s;
+	align-items: center;
+	text-decoration: none;
+}
+.see-more:hover {
+	color: black;
+  	padding: 2 0 2rem;
+}
+.see-more.one:hover {
+	background-color: #757a9e;
+}
+.see-more.two:hover {
+	background-color: #00ffc4;
+}
+.see-more.three:hover {
+	background-color: grey;
+}
+.off-screen-left {
+    transform: translateX(-150px);
+	height: 90vh;
+	transition-duration: 0.4s;
+}
+.off-screen-right {
+    transform: translateX(150px);
+	height: 90vh;
+	transition-duration: 0.4s;
+}
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+	white-space: nowrap;
+}
+.vertical {
+	display: flex;
+	flex-direction: column;
+	margin: 1.625rem;
+	margin-top: 0.625rem;
+	color: black;
+}
+.horizontal {
+	display: flex;
+	flex-direction: row;
+	margin: -0.625rem;
+	gap: 0.625rem;
+}
+.tag {
+	border-radius: 1.563rem;
+    background-color: black;
+	color: white;
+	padding: 0 1.25rem;
+	margin: 0.625rem;
+	height: 3.375rem;
+	line-height: 3.375rem;
+	border: none;
+	text-decoration: none;
+}
+.tag::selection {
+    background-color: white;
+    color: black;
+}
+footer {
+	background-color: white;
+	text-align: center;
+	padding: 0.625 0rem;
+	bottom: 0;
+	width: 100%;
+}
+footer::selection {
+    background-color: white;
+    color: black;
+}
+.image-placeholder {
+    height: 35vh;
+	aspect-ratio: 1/1;
+	border-radius: 1.563rem;
+	margin: 1.25rem;
+	transition-duration: 0.4s;
+}
+.img-size {
+	transition-duration: 0.4s;
+	height: 92.5%;
+}
+
+/*Art Gallery Page*/
+
+.art {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content: center;
+	background-color: black;
+	padding: 2.5rem;
+}
+.image-container {
+	display: flex;
+	align-items: stretch;
+	width: auto;
+	height: 22rem;
+	padding: 0;
+	margin: 0;
+}
+.minsizeimg {
+	min-width: 20%;
+}
+.minsizeimga {
+	max-height: 35vh;
+}
+.mainimg {
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: contain;
+	transition-duration: 0.4s;
+	transform: translate(0) scale(1);
+}
+.mainimg:hover {
+	transform: scale(1.1);
+	box-shadow: 0rem 0rem 0.75rem 0.25rem black;
+	z-index: 2;
+	border-radius: 1rem;
+	cursor: zoom-in;
+}
+.mainimg:focus {
+	cursor: default;
+	transition: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: auto;
+	height: 90%;
+	z-index: 3;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.mainimg:focus:hover {
+	border-radius: 0;
+}
+#selector {
+	display: flex;
+	align-items: center;
+	gap: 2.5rem;
+	padding-left: 2.5rem;
+}
+input[type="checkbox"] {
+	appearance: none;
+}
+label {
+	transition-duration: 0.4s;
+    position: relative;
+    display: inline-block;
+	white-space: nowrap;
+	cursor: pointer;
+	padding: 1rem;
+	width: auto;
+	height: auto;
+	background-color: white;
+	color: black;
+	border: 0.1rem solid black;
+}
+label:hover {
+	border-radius: 0.75rem;
+	transform: scale(1.1);
+	box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.8);
+}
+#sketch::before {
+	content: 'Sketches';
+}
+#life::before {
+	content: 'Life';
+}
+.selectcolorblack::selection {
+    background-color: black;
+    color: white;
+}
+.selectcolorwhite::selection {
+    background-color: white;
+    color: black;
+}
+
+/*Contact Page*/
+
+#contact {
+	display: flex;
+	flex-direction: column;
+	padding: 1.625rem;
+	color: white;
+	background-color: black;
+	gap: 1.625rem;
+}
+#contact > p {
+	margin: 0;
+}
+#tryme {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	padding: 0;
+	padding-right: 0;
+	gap: 2rem;
+	align-items: center;
+	justify-content: left;
+}
+.linksocial > div {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+}
+.linksocial a {
+	color: black;
+	background-color: white;
+	padding: 0.5rem 1rem 0.5rem;
+	border: 0.1rem solid black;
+	border-radius: 0.75rem;
+	text-decoration: none;
+	transition-duration: 0.4s;
+}
+.linksocial a:hover { 
+	color: white;
+	background-color: black;
+}
+.linksocial img {
+	height: 4rem;
+	width: 4rem;
+	filter: invert(100%);
+}
+
+/*Identities Page*/
+
+.showcaseid {
+	display: flex;
+	flex-direction: column;
+	height: 20rem;
+	width: auto;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	padding: 0rem 0rem 2rem;
+	transition-duration: 0.4s;
+}
+.showcaseid a {
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+.showcaseid .outfit-regular {
+	transition-duration: 0.4s;
+	margin-top: -2rem;
+	z-index: 2;
+}
+.showcaseid .outfit-regular:hover {
+	top: 0;
+	padding: 0;
+	margin: 0;
+	filter: blur(0.125rem);
+}
+.showcaseid:hover {
+	transform: scale(1.05);
+}
+#xateji {
+	background-image: url('');
+	background-color: black;
+	color: white;
+}
+#xkirae {
+	background-image: url('');
+	background-color: red;
+}
+#xacf6 {
+	background-image: url('');
+	background-color: yellow;
+}
+
+/*Ateji Page*/
+
+#ateji::selection {
+    background-color: #00ffc4;
+    color: black;
+}
+#presentation {
+	background-image: url("");
+	background-color: black;
+	color: white;
+}
+
+/*Project Page*/
+
+#mainproject {
+	color: white;
+	background-color: black;
+	padding-left: 1.625rem;
+	padding-right: 1.625rem;
+}
+
+#mainproject::selection {
+    background-color: white;
+    color: black;
+}
+
+button.tag {
+	transition-duration: 0.4s;
+}
+
+button.tag:hover {
+	color: #ababab;
+	cursor: pointer;
+}
+
+button.tag:active {
+	transition-duration: 0.4s;
+	filter: blur(0.25rem);
+}
+
+#linksref {
+	margin: 1rem;
+}
+
+#linksref > p::selection{
+    background-color: black;
+    color: white;
+}
+
+a.tag {
+	transition-duration: 0.4s;
+}
+
+a.tag:hover {
+	color: #ababab;
+}
+
+a.tag:active {
+	transition-duration: 0.4s;
+	filter: blur(0.25rem);
+}
+
+.textlink {
+	transition-duration: 0.4s;
+	color: white;
+}
+
+.textlink:hover {
+	transition-duration: 0.4s;
+	color: #ababab;
+}
+
+.horizontalscroll {
+	display: flex;
+	flex-direction: row;
+	gap: 0.625rem;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	max-height: 13rem;
+}
+
+.horizontalnotscroll {
+	display: flex;
+	flex-direction: row;
+	gap: 0.625rem;
+	overflow-x: visible;
+	overflow-y: visible;
+	white-space: nowrap;
+}
+
+.horizontalframe {
+	display: flex;
+	flex-direction: row;
+	gap: 0.625rem;
+}
+
+.horizontalscroll > .image-container {
+	max-height: 13rem;
+}
+
+#return {
+	background-color: white;
+	margin: 1rem;
+	justify-content: center;
+}
+
+#bgnostalgia {
+	background-color: #00ffc4;
+}
+
+#bgexaschool {
+	background-color: #757a9e;
+}
+
+#bgmybook {
+	background-color: grey;
+}
+.invert {
+	filter: invert(100%);
+}
+
+/*Temporary Identity Page*/
+
+#nvm {
+	display: flex;
+	flex-direction: column;
+	border: none;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background-color: black;
+	height: 100vh;
+}
+#nvm > p::selection{
+    background-color: white;
+    color: black;
+}
+#nvm > button {
+	filter: invert(100%);
+}
