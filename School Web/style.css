@@ -112,3 +112,45 @@ header p {
 	color: black;
 	box-shadow: 0 0 1rem rgba(255, 255, 255, 1);
 }
+
+/* En construction */
+
+#nvm {
+	display: flex;
+	flex-direction: column;
+	border: none;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background-color: black;
+	height: 100vh;
+}
+#nvm > p::selection{
+    background-color: white;
+    color: black;
+}
+#nvm > button {
+	filter: invert(100%);
+}
+.tag {
+	border-radius: 1.563rem;
+    background-color: black;
+	color: white;
+	padding: 0 1.25rem;
+	margin: 0.625rem;
+	height: 3.375rem;
+	line-height: 3.375rem;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.4s;
+}
+.tag::selection {
+	transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+}
+.tag:hover {
+	transition-duration: 0.4s;
+	color: #ababab;
+	cursor: pointer;
+}
